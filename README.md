@@ -1,8 +1,8 @@
-Opauth-Google
+Opauth-Bitbucket
 =============
-[Opauth][1] strategy for Google authentication.
+[Opauth][1] strategy for Bitbucket authentication.
 
-Implemented based on https://developers.google.com/accounts/docs/OAuth2 using OAuth 2.0.
+Implemented based on https://confluence.atlassian.com/display/BITBUCKET/oauth+Endpoint using OAuth.
 
 Opauth is a multi-provider authentication framework for PHP.
 
@@ -11,15 +11,12 @@ Getting started
 1. Install Opauth-Google:
    ```bash
    cd path_to_opauth/Strategy
-   git clone git://github.com/uzyn/opauth-google.git Google
+   git clone git://github.com/fancyguy/opauth-bitbucket.git Bitbucket
    ```
 
-2. Create a Google APIs project at https://code.google.com/apis/console/
-   - You do not have to enable any services from the Services tab.
-   - Make sure to go to **API Access** tab and **Create an OAuth 2.0 client ID**.
-   - Choose **Web application** for *Application type*
-   - Make sure that redirect URI is set to actual OAuth 2.0 callback URL, usually `http://path_to_opauth/google/oauth2callback`
-
+2. Create a Bitbucket integrated application under account then Integrated applications
+   - Click on create consumer and enter your application name.
+   - Description and URL are optional.
    
 3. Configure Opauth-Google strategy.
 
@@ -33,25 +30,15 @@ Required parameters:
 
 ```php
 <?php
-'Google' => array(
-	'client_id' => 'YOUR CLIENT ID',
-	'client_secret' => 'YOUR CLIENT SECRET'
+'Bitbucket' => array(
+	'key' => 'YOUR CONSUMER KEY',
+	'secret' => 'YOUR CONSUMER SECRET'
 )
 ```
 
-Optional parameters:
-`scope`, `state`, `access_type`, `approval_prompt`
-
-
-References
-----------
-- [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/accounts/docs/OAuth2)
-- [Using OAuth 2.0 for Login](https://developers.google.com/accounts/docs/OAuth2Login#scopeparameter)
-- [Using OAuth 2.0 for Web Server Applications](https://developers.google.com/accounts/docs/OAuth2WebServer)
-
 License
 ---------
-Opauth-Google is MIT Licensed  
-Copyright © 2012 U-Zyn Chua (http://uzyn.com)
+Opauth-Bitbucket is MIT Licensed  
+Copyright © 2012 FancyGuy Technologies (http://www.fancyguy.com)
 
 [1]: https://github.com/uzyn/opauth

@@ -1,14 +1,14 @@
 {
-	"name": "opauth/google",
-	"description": "Google strategy for Opauth",
-	"keywords": ["authentication","auth","google"],
+	"name": "opauth/bitbucket",
+	"description": "Bitbucket strategy for Opauth",
+	"keywords": ["authentication","auth","bitbucket"],
 	"homepage": "http://opauth.org",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "U-Zyn Chua",
-			"email": "chua@uzyn.com",
-			"homepage": "http://uzyn.com"
+			"name": "Steve Buzonas (slbmeh)",
+			"email": "steve@fancyguy.com",
+			"homepage": "http://www.stevebuzonas.com"
 		}
 	],
 	"require": {
