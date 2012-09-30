@@ -18,9 +18,9 @@ Getting started
    - Click on create consumer and enter your application name.
    - Description and URL are optional.
    
-3. Configure Opauth-Google strategy.
+3. Configure Opauth-Bitbucket strategy.
 
-4. Direct user to `http://path_to_opauth/google` to authenticate
+4. Direct user to `http://path_to_opauth/bitbucket` to authenticate
 
 
 Strategy configuration
